@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_delete"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/img_photo"
+            app:layout_constraintEnd_toEndOf="@+id/img_photo"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imgfavorite"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <TextView
+            android:id="@+id/judul_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_photo"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <TextView
+            android:id="@+id/tahun_film"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="@string/tahun"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.752"
+            app:layout_constraintStart_toEndOf="@+id/judul_film"
+            app:layout_constraintTop_toBottomOf="@+id/img_photo"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:text="@string/deskrip"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tahun_film"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/judul_film"
+            app:layout_constraintTop_toBottomOf="@+id/judul_film"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tahun_film"
+            android:layout_marginStart="135dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintStart_toStartOf="@+id/judul_film"
+            app:layout_constraintTop_toBottomOf="@+id/overview"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <ImageView
+            android:id="@+id/imgfavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="155dp"
+            android:background="@color/putih"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/img_photo"
+            app:layout_constraintEnd_toStartOf="@+id/tahun_film"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/img_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

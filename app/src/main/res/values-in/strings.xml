@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tugas Ke Empat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Bioskop</string>
+    <string name="tab_text_2">Acara Televisi</string>
+    <string name="name_title">Judul Film</string>
+    <string name="deskrip">Deksripsi</string>
+    <string name="detail">Rincian</string>
+    <string name="tahun">Tahun</string>
+    <string name="change_language_settings">Pengaturan Bahasa</string>
+    <string name="title_bar">Rincian Movie</string>
+    <string name="vote_average">Pemilihan</string>
+    <string name="title_bartv">TV Show Rinci</string>
+    <string name="favorite">Kesukaan</string>
+    <string name="hapus">Delete</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

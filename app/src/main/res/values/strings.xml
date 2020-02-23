@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SubmissionFour</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_text_1">Movie</string>
+    <string name="tab_text_2">TV SHOW</string>
+    <string name="name_title">Title Film</string>
+    <string name="deskrip">Overview</string>
+    <string name="detail">Detail</string>
+    <string name="tahun">Year</string>
+    <string name="change_language_settings">Language Setting</string>
+    <string name="title_bar">Detail Movie</string>
+    <string name="vote_average">Vote Average</string>
+    <string name="title_bartv">TV Show Detail</string>
+    <string name="favorite">Favorite</string>
+    <string name="hapus">Delete</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="favourite_list">Favorite List</string>
+    <string name="empty_text">empty</string>
+    <string name="no_item">No Item</string>
+</resources>

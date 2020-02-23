@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="149dp"
+        android:layout_height="197dp"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_toEndOf="@id/img_photo"
+        android:layout_toRightOf="@+id/img_photo"
+        android:text="@string/name_title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="-92dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/img_photo"
+        android:layout_toRightOf="@+id/txt_name"
+        android:drawableLeft="@drawable/ic_action_start"
+        android:text="8.2" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_start"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/deskrip" />
+
+
+    <TextView
+        android:id="@+id/txt_tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_description"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/img_photo"
+        android:drawableLeft="@drawable/ic_list_bulleted"
+        android:text="@string/tahun" />
+
+    <Button
+        android:id="@+id/btn_watch"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/img_photo"
+        android:layout_alignTop="@+id/img_photo"
+        android:layout_alignEnd="@+id/img_photo"
+        android:layout_alignBottom="@+id/img_photo"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="-143dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/img_photo"
+        android:drawableLeft="@drawable/ic_action_play"
+        android:text="@string/detail" />
+
+</RelativeLayout>
