@@ -22,22 +22,10 @@
             android:background="@color/colorPrimaryDark"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            android:text="@string/appwidget_text"
+            android:text="@string/app_name"
             android:textSize="20sp"
             android:layout_weight="1" />
     </LinearLayout>
 
-    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/empty_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        android:background="@color/colorAccent"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:text="@string/no_item"
-        android:textSize="20sp"
-        android:visibility="gone" />
 
 </FrameLayout>

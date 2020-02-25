@@ -1,11 +1,15 @@
-package com.asadeveloper.submissionempat.widget;
+package com.asadeveloper.submissionempat.db;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
-import android.content.ComponentName;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.net.Uri;
 import android.os.Build;
 import android.widget.RemoteViews;
@@ -13,16 +17,22 @@ import android.widget.Toast;
 
 import com.asadeveloper.submissionempat.MainActivity;
 import com.asadeveloper.submissionempat.R;
+import com.asadeveloper.submissionempat.model.MovieItems;
+import com.asadeveloper.submissionempat.widget.StackWidgetService;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
-/**
- * Implementation of App Widget functionality.
- */
-public class FavoriteFilmWidget extends AppWidgetProvider {
-    public static final String TOAST_ACTION = "com.asadeveloper.submissionempat.TOAST_ACTION";
-    public static final String EXTRA_ITEM = "com.asadeveloper.submissionempat.EXTRA_ITEM";
+import static android.provider.BaseColumns._ID;
+import static android.provider.ContactsContract.CommonDataKinds.Organization.TITLE;
+import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.DATE;
+import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.OVERVIEW;
+import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.POSTER;
+import static com.asadeveloper.submissionempat.db.DatabaseContract.TABLE_NAME;
+import static com.asadeveloper.submissionempat.widget.FavoriteFilmWidget.EXTRA_ITEM;
+import static com.asadeveloper.submissionempat.widget.FavoriteFilmWidget.TOAST_ACTION;
 
+public class WidgetMovies extends AppWidgetProvider {
     static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
                                 int appWidgetId) {
 
@@ -78,4 +88,3 @@ public class FavoriteFilmWidget extends AppWidgetProvider {
         super.onReceive(context, intent);
     }
 }
-

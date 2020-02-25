@@ -32,7 +32,6 @@ public class MovieItems implements Parcelable{
         this.poster_path=cursor.getString(cursor.getColumnIndexOrThrow(POSTER));
         this.release_date=cursor.getString(cursor.getColumnIndexOrThrow(DATE));
 
-
     }
 
     public MovieItems(JSONObject object){
