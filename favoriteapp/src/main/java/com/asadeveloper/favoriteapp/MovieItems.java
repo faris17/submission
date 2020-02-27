@@ -1,22 +1,18 @@
-package com.asadeveloper.submissionempat.model;
+package com.asadeveloper.favoriteapp;
 
 import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import androidx.annotation.NonNull;
-
-import com.asadeveloper.submissionempat.db.DatabaseContract;
-
 import org.json.JSONObject;
 
 import static android.provider.BaseColumns._ID;
-import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.DATE;
-import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.OVERVIEW;
-import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.POSTER;
-import static com.asadeveloper.submissionempat.db.DatabaseContract.NoteColumns.TITLE;
+import static com.asadeveloper.favoriteapp.db.DatabaseContract.NoteColumns.DATE;
+import static com.asadeveloper.favoriteapp.db.DatabaseContract.NoteColumns.OVERVIEW;
+import static com.asadeveloper.favoriteapp.db.DatabaseContract.NoteColumns.POSTER;
+import static com.asadeveloper.favoriteapp.db.DatabaseContract.NoteColumns.TITLE;
 
-public class MovieItems implements Parcelable{
+public class MovieItems implements Parcelable {
 
     private String poster_path;
     private String original_title;

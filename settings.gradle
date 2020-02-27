@@ -1,2 +1,4 @@
 include ':app'
 rootProject.name='Submission Empat'
+include ':favoriteclient'
+include ':favoriteapp'

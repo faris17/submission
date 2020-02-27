@@ -22,4 +22,7 @@
     <string name="favourite_list">Favorite List</string>
     <string name="empty_text">empty</string>
     <string name="no_item">No Item</string>
+    <string name="schedule_setting">Schedule</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
 </resources>

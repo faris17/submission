@@ -44,6 +44,10 @@ public class FavoriteActivity extends AppCompatActivity {
             Intent favorite = new Intent(this, MainActivity.class);
             startActivity(favorite);
         }
+        if (item.getItemId() == R.id.action_schedule_settings) {
+            Intent schedule = new Intent(this, Schedule_Setting.class);
+            startActivity(schedule);
+        }
         return super.onOptionsItemSelected(item);
     }
 }
